@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const GameContainer = styled.div`
-  border: 0.2rem solid #0085a3;
+  border: 0.2rem solid #a38600;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
   max-width: 100vw;
-  background: #ebfeff;
+  background: #ecece2;
   border-radius: 1rem;
   text-align: center;
   padding: 2rem;
@@ -23,7 +23,6 @@ type ButtonGameControllerProps = {
 
 export const ButtonGameContainer = styled.div<ButtonGameControllerProps>`
   transition: all 0.3s ease;
-
   :hover {
     opacity: 0.8;
   }
@@ -35,12 +34,12 @@ export const ButtonGameContainer = styled.div<ButtonGameControllerProps>`
     width: 100%;
     height: 6rem;
     margin: 0.5rem 0;
-    background: ${({ correct, userClicked }) =>
+    background-color: ${({ correct, userClicked }) =>
       correct
-        ? "linear-gradient(90deg, #56ffa4, #59bc86)"
+        ? "#2bda4a" //linear-gradient(90deg,#e0d097,#cac8a2)
         : !correct && userClicked
-        ? "linear-gradient(90deg, #ff5656, #c16868)"
-        : "linear-gradient(90deg, #56ccff, #6eafb4)"};
+        ? "#ff0f0f" //linear-gradient(90deg, #ff5656, #c16868)
+        : "#5ecac9"}; // linear-gradient(90deg, #56ccff, #6eafb4)
     border: 0.3rem solid #fff;
     box-shadow: 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
