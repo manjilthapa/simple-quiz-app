@@ -1,2 +1,4 @@
-export const suffleArray = (array: any[]) => 
-[...array].sort(() => Math.random() - 0.5);
+import { Answer } from "../interfaces/IQuestion";
+
+export const suffleArray = (array: Answer[]) =>
+  [...array].sort(() => Math.random() - 0.5);
