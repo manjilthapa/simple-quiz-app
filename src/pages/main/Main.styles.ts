@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
   }
 
   h1 {
-    font-family: PT Mono, "Arial Narrow Bold", sans-serif;
+    font-family: PT Mono, sans-serif;
 
     background-size: 100%;
     font-size: 7rem;
@@ -56,23 +56,13 @@ export const Wrapper = styled.div`
   .next {
     border: none;
     font-size: 2rem;
-    padding: 2rem 5rem;
+    padding: 2rem 4rem;
     margin: 2rem 0;
     border-radius: 0.7rem;
     background: linear-gradient(180deg, #fff, #ffcc91);
     border: 0.2rem solid #d38558;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
     cursor: pointer;
-
-    /*cursor: pointer;
-    background: linear-gradient(180deg, #fff, #ffcc91);
-    border: 0.2rem solid #d38558;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-    border-radius: 1rem;
-    height: 4rem;
-    margin: 2rem 0;
-    padding: 2rem 5rem;
-    font-size: 2rem;*/
   }
 
   .start {
